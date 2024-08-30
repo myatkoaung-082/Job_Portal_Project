@@ -1,0 +1,10 @@
+@import "https://bootswatch.com/5/lumen/bootstrap.min.css";
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/animate.css/animate.css";
+.container .card {
+  height: 25rem;
+}
+/* .container .col-12 {
+  height: 60px;
+} */

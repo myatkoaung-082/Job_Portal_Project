@@ -1,0 +1,27 @@
+
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../../node_modules/animate.css/animate.css";
+.container .blob1 {
+  z-index: 1;
+  bottom: -500px;
+  left: -200px;
+  width: 400px;
+}
+.container .blob2 {
+  top: -250px;
+  right: -100px;
+  width: 400px;
+}
+.container .col-7 {
+  height: 600px;
+}
+.container .logo {
+  height: 300px;
+}
+
+.w-35 {
+  width: 150px;
+}
+
+/*# sourceMappingURL=login.css.map */

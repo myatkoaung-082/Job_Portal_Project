@@ -1,0 +1,960 @@
+// Custom.scss
+
+// fontawesome link
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+@import '../../node_modules/animate.css/animate.css';
+
+// Option B: Include parts of Bootstrap
+
+$love-color:orange;
+
+
+
+
+
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+$link-hover-color:red;
+
+$navbar-nav-link-padding-x:2rem;
+$navbar-padding-y:0.4rem;
+
+// seeker
+// all_job_blade
+$accordion-button-active-bg: #02475e;
+$accordion-button-active-color: #FFFFFF;
+$accordion-button-focus-box-shadow: none;
+$accordion-icon-active-color: #FFFFFF;
+$accordion-icon-transition: transform .2s ease-in-out;
+$nav-pills-link-active-bg: #55C3BD;
+$nav-link-color: #FFFFFF;
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+$theme-colors: (
+  "primary": #02475e,
+  "secondary": #FF0054,
+  "info": #55C3BD,
+  "light": #FFFFFF,
+  "dark" : #000000,
+  "warning": #F8F8F8,
+  "danger": red,
+  "orange": orange
+);
+
+// 5. Include remainder of required parts
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/helpers";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/pagination";
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/alert";
+@import "../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../node_modules/bootstrap/scss/accordion";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/modal";
+
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+
+
+// 8. Add additional custom code here
+
+// google fonts
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+ 
+}
+
+#togglePassword {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333; /* Adjust color as needed */
+}
+
+
+
+
+.footer{
+   
+    .fa-brands{
+      font-size: 1.5rem;
+      transition: .5s;
+    }
+    .fa-brands:hover{
+      .fa-brands{
+        color: orange;
+      }
+    }
+  }
+  
+  
+  .company-detail{
+    height: 500px;
+
+    .company-header{
+      height: 150px;
+      overflow: hidden;
+      position: relative;
+  
+  
+      .background{
+        position: absolute;
+        width: 700px;
+        height: 310px;
+        border-bottom-right-radius: 9027%;
+        border-bottom-left-radius: 1118%;
+        top: -100px;
+      }
+  
+      .content{
+        position: absolute;
+        z-index: 200;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .form-box {
+    width: 780px;
+    height: 600px;
+    position: relative;
+    margin: 2% auto;
+    overflow: hidden;
+  }
+
+  .button-box {
+    width: 227px;
+    position: relative;
+    border-radius: 30px;
+  }
+
+  .toggle-btn {
+    padding: 10px 27px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    color: $love-color;
+    outline: none;
+    position: relative;
+  }
+
+  #btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 112px;
+    height: 100%;
+    background: #02475e;
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+
+  .input-group-login {
+    top: 200px;
+    position: absolute;
+    width: 680px;
+    transition: 0.5s;
+  }
+
+  .input-group-register {
+    top: 320px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+  }
+
+  .submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #02475e;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+  }
+
+  #userRegisterForm {
+    left: 50px;
+  }
+
+  #companyRegisterForm input {
+    color: black;
+    font-size: 15;
+  }
+
+  #companyRegisterForm {
+    left: 950px;
+  }
+
+  #companyRegisterForm input {
+    color: black;
+    font-size: 15;
+  }
+
+  // .input-form {
+  //   border: 1.5px solid #55C3BD;
+  //   border-radius: 10px;
+  //   height: 50px;
+  //   display: flex;
+  //   align-items: center;
+  //   padding-left: 10px;
+  //   transition: 0.2s ease-in-out;
+  // }
+  
+  // .input {
+  //   margin-left: 10px;
+  //   border-radius: 10px;
+  //   border: none;
+  //   width: 85%;
+  //   height: 100%;
+  // }
+  
+  // .input:focus {
+  //   outline: none;
+  // }
+  
+  // .input-form:focus-within {
+  //   border: 1.5px solid #02475e;
+  // }
+  
+  .sidebar{
+    // position: fixed;
+    left: 0;
+    top: 50;
+    z-index: 1;
+    overflow-x: hidden;
+  }
+
+  .company-profile {
+    height:auto;
+  
+    .background {
+      background-image: url(../image/companypf.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    .company-header {
+      height: 160px;
+      overflow: hidden;
+  
+      .company-logo {
+        height: 160px;
+  
+      }
+  
+      .info {
+        height: 160px;
+      }
+  
+      
+    }
+  }
+  
+  
+  // company overview card css
+  
+  .companyOverviewCard {
+    // height: 400px;
+    width: 300px;
+  }
+  
+  .COcard-top {
+    width: 100%;
+    height: 40px;
+  }
+  
+  .COcard-border {
+    width: 70%;
+    left: 47px;
+    border-radius: 0 0 1rem 1rem;
+  }
+  
+  
+  
+  // opening job cards
+  
+  
+  
+  .fs-10{
+    font-size: 13px;
+  }
+  
+  .job-card{
+    .job-card-description{
+        width: 675px;
+    }
+   
+    transition: .5s;
+  
+  }
+
+  // .job-card-height{
+  //   height: 250px;
+  // }
+  
+  .job-card:hover{
+    transform:translateY(-.5rem);
+  }
+
+// company update profile cards
+.companyLogoCard {
+  .profileLogo {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+// companyLogoUpload
+.custum-file-upload .icon svg {
+  height: 30px;
+  fill: rgb(241, 244, 247);
+}
+
+.card-top {
+  height: 40px;
+}
+
+.card-header-border {
+  width: 50%;
+  top: 0;
+  border-radius: 0 0 1rem 1rem;
+}
+
+// All Jobs CSS
+.all-jobs{
+  ul{
+    width: 802px;
+
+    li{
+      width: 400px;
+      button{
+        width: 400px;
+      }
+    }
+  }
+
+  .tab-pane{
+    width: 1080px;
+    .table{
+      width: 1000px;
+    }
+  }
+}
+
+//zyt
+// job create
+.companyBasicInformationCard {
+  color: black;
+  background: white;
+  // border-radius: 2rem;
+  border: 1px solid rgb(214, 207, 207);
+  // box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.CBIcard-top {
+  width: 100%;
+  height: 40px;
+  position: relative;
+}
+
+.CBIcard-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  width: 50%;
+  background-color: transparent;
+  border: 2px solid gray;
+  top: 0;
+  left: 213px;
+  border-top: none;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0px 0px 10px 0px gray;
+}
+
+.input-form {
+  border: 1.5px solid #02475e;
+  border-radius: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.input {
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 85%;
+  height: 100%;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input-form:focus-within {
+  border: 1.5px solid #55C3BD;
+}
+
+
+//company list
+.company-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.company-card {
+  background: #f5f5f5;
+  transition: 0.5s ease-out;
+}
+
+.fs-13{
+  font-size: 13px;
+}
+
+// jobs
+.job-card{
+  .job-card-description{
+      width: 675px;
+      // height: 50px;
+      // overflow: hidden;
+      
+    }
+  
+  transition: .5s;
+
+}
+
+.job-card:hover{
+  transform:translateY(-.5rem);
+}
+
+// Choose payment
+.radio-btn{
+  margin: 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #55C3BD;
+  cursor: pointer;
+}
+.radio-btn > i{
+  font-size: 20px;  
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) scale(4);
+  border-radius: 50px;
+  padding: 2px;
+  transition: 0.2s;
+  pointer-events: none;
+  opacity: 0;
+}
+.radio-btn .bank-img{
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.custom-radio input:checked + .radio-btn{
+  border: 3px solid #02475e;
+}
+.custom-radio input:checked + .radio-btn>i{
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+// company dashboard
+.view-list{
+  .card{
+    transition: 0.5s;
+  }
+  .card:hover{
+    transform: translateY(-0.5rem);
+  }
+}
+
+.plan-list{
+  .card{
+    transition: 0.5s;
+  }
+  .card:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+  }
+}
+
+//company sidebar
+.sidebar{
+  .sidebar-list{
+    a{
+      transition: 0.5s;
+    }
+    a:hover{
+      color: #55C3BD !important;
+    }
+  }
+}
+
+//company header
+#navbarSupportedContent{
+  a{
+    transition: 0.5s;
+  }
+  a:hover{
+    color: #55C3BD !important;
+  }
+  .btn{
+    transition: 0.5s;
+  }
+  .btn:hover{
+    background-color: #FFFFFF;
+    color: #02475e !important;
+  }
+}
+
+//company payment method
+.jobCreateBtn {
+  transition-duration: 0.5s;
+}
+
+.jobCreateBtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+// about page
+.aboutPage{
+  height: 50vh;
+  width: 100vw;
+}
+
+#one{
+  background-image: url(../image/banner-yangon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter:blur(0.2);
+}
+
+#two{
+  background-image: url(../image/mandalay-hill.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter:blur(0.2);
+}
+
+#three{
+  background-image: url(../image/mandalay-pagan-packet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter:blur(0.2);
+}
+
+.img-box{
+  background-color: #000000;
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-image: url(../image/thetpan1.jpg);
+  background-size: cover;
+}
+
+.img-box1{
+  background-color: #000000;
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-image: url(../image/zyt2.jpg);
+  background-size: cover;
+}
+
+.img-box2{
+  background-color: #000000;
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-image: url(../image/myatko1.jpg);
+  background-size: cover;
+}
+
+.img-box3{
+  background-color: #000000;
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-image: url(../image/zinko1.jpg);
+  background-size: cover;
+}
+
+// seeker
+// all_job_blade
+.accordion{
+  input[type = "radio"]:checked{
+      background-color: #02475e;
+      border-color: #F8F8F8;
+  }
+}
+
+//swiper js css
+.swiper-slide img {
+  width: 100px;
+  height: 100px;
+  object-fit:cover;
+}
+
+.swiper-wrapper{
+  transition-timing-function: linear;
+}
+
+.guest-bg{
+  // background-image: url(../admin/images/page-turner.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  // color: white;
+}
+
+//IsActive
+
+.sideActive{
+
+  i{
+      color:#55c3bd;
+  }
+  small{
+      color: #55c3bd;
+  }
+}
+
+.headerActive{
+  a{
+      color: #55c3bd;
+  }
+}
+
+
+
+@media screen and (max-width:600px){
+  .cards{
+    display: flex;
+    flex-direction: column;
+    .card{
+      margin-bottom: 10px;
+    }
+  }
+  .swiper-slide img{
+    width: 60px;
+    height: 60px;
+  }
+  .footsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      font-size: 14px;
+      text-align: center;
+    }
+    ul{
+      text-align: center;
+    }
+    ul li a i{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  // login page
+  .loginForm, .btn, .input{
+    font-size: 14px;
+  }
+
+  // jobs page
+  .input-form{
+    margin-bottom: 5px;
+  }
+
+  .job-card{
+    font-size: 14px;
+  }
+
+  .contents{
+    img{
+      width: 100px;
+      height: 100px;
+    }
+    font-size: 14px;
+    p{
+      text-indent: 30px;
+      width: 22rem;
+      text-align: justify;
+    }
+  }
+  .cdeatail{
+    p{
+      width: 28rem;
+      text-indent: 30px;
+      text-align: justify;
+    }
+  }
+
+  .company-logo{
+    img{
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+    }
+  }
+
+  #one{
+    width: 100px;
+    height: 100px;
+    font-size: 12px;
+  }
+  #two{
+    width: 100px;
+    height: 100px;
+    font-size: 12px;
+  }
+  #three{
+    width: 100px;
+    height: 100px;
+    font-size: 12px;
+  }
+  .img-box, .img-box1, .img-box2, .img-box3{
+    width: 100px;
+    height: 100px;
+  }
+
+  .about{
+    p{
+      color: black;
+      font-size: 10px;
+    }
+  }
+  .box-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // company details
+  #desCmp{
+    width: 30em;
+    text-align: justify;
+    font-size: 12px;
+  }
+  #summary, #footCmp{
+    font-size: 12px;
+  }
+  #jobTitle{
+    font-size: 12px;
+  }
+  #jobTitle1{
+    font-size: 16px;
+  }
+  #jobTitle2{
+    font-size: 16px;
+  }
+  #jobTitle3{
+    font-size: 12px;
+  }
+  // #jobdes1{
+  //   font-size: 12px;
+  // }
+  #bene{
+    font-size: 12px;
+  }
+  #jobDes{
+    width: 30em;
+    text-align: justify;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  // guest home
+  .cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .swiper-slide img{
+    width: 100px;
+    height: 100px;
+  }
+
+  .footsection{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  // login page
+  .loginForm, .btn, .input{
+    font-size: 14px;
+  }
+
+  // jobs page
+  .input-form{
+    margin-bottom: 5px;
+  }
+
+  .job-card{
+    font-size: 14px;
+
+    .company-loca{
+      font-size: 14px;
+    }
+  }
+
+  .contents{
+    p{
+      width: 30rem;
+    }
+  }
+
+  .company-logo{
+    img{
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+  }
+
+  #one{
+    width: 150px;
+    height: 150px;
+    font-size: 12px;
+  }
+  #two{
+    width: 150px;
+    height: 150px;
+    font-size: 12px;
+  }
+  #three{
+    width: 150px;
+    height: 150px;
+    font-size: 12px;
+  }
+  .box-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-img-overlay{
+    text-align: end;
+    padding-right: 50px;
+  }
+  #desCmp{
+    text-align: justify;
+    font-size: 14px;
+  }
+  #CmpName{
+    font-size: 14px;
+  }
+  #summary, #footCmp{
+    font-size: 14px;
+  }
+}
+
+// @media screen and (max-width:1441px) {
+//   .cards{
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//   }
+//   .footsection{
+//     display: flex;
+//     justify-content: space-around;
+//   }
+// }
+
+@media screen and (min-width:1200px) {
+  .cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .swiper-slide img{
+    width: 150px;
+    height: 150px;
+  }
+  .footsection{
+    display: flex;
+    justify-content: space-around;
+  }
+  .company-logo{
+    img{
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+  }
+  #one{
+    width: 200px;
+    height: 200px;
+  }
+  #two{
+    width: 200px;
+    height: 200px;
+  }
+  #three{
+    width: 200px;
+    height: 200px;
+  }
+  .card-img-overlay{
+    text-align: start;
+    padding-right: 50px;
+  }
+  #CmpName{
+    font-size: 14px;
+  }
+}
